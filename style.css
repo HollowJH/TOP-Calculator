@@ -1,0 +1,50 @@
+:root{
+    --width: 420px;
+    --height: 600px;
+}
+
+.calculator{
+    border: 1px black solid;
+    width: var(--width);
+    height: var(--height);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.screen{
+    background-color: #cfcfcf;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 1vw;
+}
+
+.screen p{
+    font-size: 35px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: stretch;
+}
+
+.button{
+    width: calc(var(--width) / 4.14);
+    flex-grow: 1;
+}
+
+.misc{display: flex;}
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#dot, #equal{flex-grow: .06;}
+
+#zero{flex-grow: 2;}
